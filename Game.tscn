@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://Enemy/Turret.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Enemy/Enemy_Container.gd" type="Script" id=4]
 [ext_resource path="res://Player/Player_Container.gd" type="Script" id=12]
 
@@ -43,6 +44,11 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 } ]
 0/z_index = 0
 
+[sub_resource type="NavigationPolygon" id=11]
+vertices = PoolVector2Array( 2420, 312, 1854, 189, 2038, 186, 2164, 184, 2236, 184, 2810, 359, 1464, 189, 1785, 187, 3390, 121, 3318, 115, 1733, -80, 74, -624, 3706, -633, 2304, 312, 1792, 311, 1290, 251, 1274, 176, 3706, 575, 3386, 501, 3010, 563, 3316, 501, 1541, -86, 974, -79, 1531, -3, 768, -86, 82, 311, 564, 53, 767, 173, 746, 325, 639, 195, 639, 56, 743, -3, 2998, 499, 2958, 511, 2946, 439, 2425, 375, 2806, 411, 2754, 447, 2299, 377, 2738, 487, 2670, 523, 2002, 567, 1986, 499, 2236, 121, 2894, 371, 1780, 113, 1464, 115, 1723, 16, 1392, 112, 1098, 109, 955, 3, 1026, 101, 2042, 119, 2162, 115, 1973, 184, 1792, 377, 1854, 495, 1537, 313, 1074, 571, 78, 555, 74, 399, 326, 387, 1086, 511, 1021, 189, 895, 320, 901, 187, 1849, 120, 1975, 117, 1186, 391, 1158, 459, 334, 295, 1528, 382, 1458, 479, 1406, 443, 1310, 371, 2666, 559, 1846, 555, 1478, 567, 1210, 256, 2902, 419, 1093, 195, 572, 195, 1208, 171, 1402, 181 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4, 5 ), PoolIntArray( 6, 7, 1, 0 ), PoolIntArray( 8, 9, 10, 11, 12 ), PoolIntArray( 0, 13, 14, 15, 16, 6 ), PoolIntArray( 8, 12, 17, 18 ), PoolIntArray( 18, 17, 19, 20 ), PoolIntArray( 11, 10, 21 ), PoolIntArray( 22, 11, 21, 23 ), PoolIntArray( 11, 22, 24 ), PoolIntArray( 25, 11, 24, 26 ), PoolIntArray( 27, 28, 29, 30, 31 ), PoolIntArray( 32, 33, 34, 9 ), PoolIntArray( 35, 0, 5, 36, 37 ), PoolIntArray( 38, 35, 37, 39, 40, 41, 42 ), PoolIntArray( 4, 43, 9, 44, 5 ), PoolIntArray( 45, 7, 6, 46 ), PoolIntArray( 47, 10, 9 ), PoolIntArray( 48, 49, 47, 9, 45 ), PoolIntArray( 23, 47, 49 ), PoolIntArray( 50, 22, 23, 49, 51 ), PoolIntArray( 20, 19, 32, 9 ), PoolIntArray( 52, 53, 3, 2 ), PoolIntArray( 54, 2, 1 ), PoolIntArray( 55, 14, 13, 38, 42, 56 ), PoolIntArray( 15, 14, 57 ), PoolIntArray( 58, 59, 60, 61, 62 ), PoolIntArray( 51, 63, 64, 65, 50 ), PoolIntArray( 54, 1, 66, 67 ), PoolIntArray( 31, 50, 65, 27 ), PoolIntArray( 68, 69, 62, 61, 70, 28 ), PoolIntArray( 15, 57, 71, 72, 73, 74 ), PoolIntArray( 40, 75, 41 ), PoolIntArray( 71, 55, 56, 76, 77, 72 ), PoolIntArray( 15, 74, 68, 78 ), PoolIntArray( 9, 34, 79, 44 ), PoolIntArray( 68, 64, 63, 80, 78 ), PoolIntArray( 81, 29, 28, 70 ), PoolIntArray( 24, 31, 30, 26 ), PoolIntArray( 70, 25, 26, 81 ), PoolIntArray( 68, 28, 64 ), PoolIntArray( 82, 78, 80, 49 ), PoolIntArray( 16, 82, 49, 48, 83 ), PoolIntArray( 83, 6, 16 ), PoolIntArray( 67, 66, 45 ), PoolIntArray( 9, 43, 53 ), PoolIntArray( 53, 52, 67 ), PoolIntArray( 45, 46, 48 ), PoolIntArray( 45, 9, 53 ), PoolIntArray( 45, 53, 67 ) ]
+outlines = [ PoolVector2Array( 74, -624, 3706, -633, 3706, 575, 3010, 563, 2998, 499, 2958, 511, 2946, 439, 2902, 419, 2894, 371, 2810, 359, 2806, 411, 2754, 447, 2738, 487, 2670, 523, 2666, 559, 2002, 567, 1986, 499, 1854, 495, 1846, 555, 1478, 567, 1458, 479, 1406, 443, 1310, 371, 1186, 391, 1158, 459, 1086, 511, 1074, 571, 78, 555, 74, 399, 326, 387, 334, 295, 82, 311 ), PoolVector2Array( 768, -86, 974, -79, 955, 3, 743, -3 ), PoolVector2Array( 564, 53, 639, 56, 639, 195, 572, 195 ), PoolVector2Array( 767, 173, 901, 187, 895, 320, 746, 325 ), PoolVector2Array( 1026, 101, 1098, 109, 1093, 195, 1021, 189 ), PoolVector2Array( 1208, 171, 1274, 176, 1290, 251, 1210, 256 ), PoolVector2Array( 1541, -86, 1733, -80, 1723, 16, 1531, -3 ), PoolVector2Array( 1392, 112, 1464, 115, 1464, 189, 1402, 181 ), PoolVector2Array( 1780, 113, 1849, 120, 1854, 189, 1785, 187 ), PoolVector2Array( 1537, 313, 1792, 311, 1792, 377, 1528, 382 ), PoolVector2Array( 1975, 117, 2042, 119, 2038, 186, 1973, 184 ), PoolVector2Array( 2304, 312, 2420, 312, 2425, 375, 2299, 377 ), PoolVector2Array( 2162, 115, 2236, 121, 2236, 184, 2164, 184 ), PoolVector2Array( 3318, 115, 3390, 121, 3386, 501, 3316, 501 ) ]
+
 [node name="Game" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -62,3 +68,12 @@ limit_bottom = 600
 
 [node name="Enemy_Container" type="Node2D" parent="."]
 script = ExtResource( 4 )
+
+[node name="Navigation2D" type="Navigation2D" parent="."]
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Navigation2D"]
+position = Vector2( 4, 8 )
+navpoly = SubResource( 11 )
+
+[node name="Turret" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1595, -88 )
